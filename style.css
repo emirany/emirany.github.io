@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box;
+    /* border:dashed; */
+    }
+
+body {
+    background-color: rgb(240, 230, 218);
+    font-family: 'brandon-grotesque', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-image: url('assets/AXD254_Mobile_Blank_Noise_v02a-01.png');
+    color: white;
+    background-size:cover;
+    
+}
+/* the main container */
+
+.card{
+ width:600px;
+ height:1060px;
+  margin: 3em auto;
+  overflow: hidden;
+  box-shadow: 2px 5px 15px 0px #17161694;
+  background-color:rgb(255, 255, 255);
+  border-radius: 25px;
+}
+
+#front-card{
+
+  background-image: url('assets/Yell_AXD254_BC_Front_Static_Blank.png');
+  background-size:cover;
+}
+ 
+#back-card {
+  background-image: url('assets/Yell_AXD254_BackStatic_Blank.png');
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+h1{
+  /* to right align text */
+  font-size: 4em;
+  font-weight: 400;
+  margin-top: 85%;
+  margin-right: 5%;
+  text-align: right;
+
+}
+
+h2{
+  /* to left align text */
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-top: 0%;
+  margin-left: 34%;
+
+}
+
+.back-text {
+  margin-top: 40%;
+  margin: left 40px;
+}
+
+h3{
+  font-size: 3em;
+  font-weight: 400;
+  margin-top: 90%;
+  margin-left: 10%;
+  margin-bottom: 15%;
+}
+
+.text-container h4{
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-top: -15%;
+  margin-bottom: 16%;
+  margin-left: 55;
+  font-family: 'brandon-grotesque', sans-serif;
+  
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* class practice */ 
+
+svg{
+  fill:rgb(0, 0, 0);
+}
+
+svg:hover{
+  fill:rgb(117, 168, 189);
+}
+
+.icon-container{
+  /* controls the width of the overall container */
+  width:100%;
+  /* what enables the use of CSS grid */
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr; */
+}
+
+/* what the svgs will be styled as on page load */
+h4{
+  color:rgb(255, 255, 255);
+  /* width:100%; */
+  /* height:auto; */
+  /* margin: 0 auto */
+}
+
+h4:hover{
+  color:rgb(178, 206, 164);
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+animation: pulse; /* referring directly to the animation's @keyframe declaration */
+animation-duration: 2s; /* don't forget to set a duration! */
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: rgb(0, 0, 0);
+  }
+  .card{
+  width:40%;
+  /* width:400px; */
+/* height:750px; */
+}
+}
+
+/* to fix the card size in browser */ 
+
+@media only screen and (min-width: 800px) {
+  body {
+    background-color: rgb(0, 0, 0);
+  }
+  .card{
+  width:30%;
+  /* width:400px; */
+  /* height:750px; */
+
+}
+}
